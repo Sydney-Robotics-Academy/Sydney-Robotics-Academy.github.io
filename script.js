@@ -12,12 +12,8 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display countdown
-    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
     // Check if the countdown has reached zero
     if (distance < 0) {
-        clearInterval(countdown);
         const now = new Date().getTime();
         const distance = nationals - now;
 

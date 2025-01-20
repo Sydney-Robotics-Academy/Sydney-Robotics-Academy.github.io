@@ -11,7 +11,7 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    document.getElementById("title").innerHTML = "Countdown to Australian National Championships";
+    document.getElementById("title").innerHTML = "Countdown to Worlds";
     document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
